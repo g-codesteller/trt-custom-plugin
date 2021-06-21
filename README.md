@@ -1,6 +1,7 @@
 # TensorRT Custom Plugin Example
-
 Adapted Gelu Plugin from https://github.com/NVIDIA/TensorRT/tree/master/plugin/geluPlugin
+
+This repository explain how to work with custom layers in an end-to-end Deep Learning Pipeline. In this repository, I have added a custom layer in the model architecture using Keras custom Layer api. Thereafter, the model is trained on a demo dataset to do dogs vs cats classification. Post training, I have written the converter code to convert the trained model to a TensorRT engine. I have also included a inference code to do inference with the converted engine.
 
 ## Train model with GeLu 
 The [model](https://github.com/codesteller/trt-custom-plugin/blob/45532a116791cd6ffb5a607db3adccadbeabe035/tf_utils/model.py#L14) can be trained using the script do_train.py.
